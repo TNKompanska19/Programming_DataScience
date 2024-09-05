@@ -92,3 +92,49 @@ print(zel in gazelle) #The in operator checks if the first string is a substring
 #ex
 print('1' < 'one')  # False
 print('0' < 'o')
+
+'''
+  Methods
+  When we use method, we use . (dot) operator
+  - find() - finds substrings in a string and returns the index where the substring starts
+  - lower() and upper() - transforms a string into uppercase and lowercase letters
+'''
+#ex - find()
+index: int = 'holidays'.find('days')
+
+#ex - upper()
+lowercase_name: str = 'muhammad'
+print(lowercase_name.upper())
+
+#ex - lower()
+uppercase_name: str = 'XIAYO'
+print(uppercase_name.lower())
+
+'''
+String Formatting
+    You have several alternatives:
+        - F-strings
+        - Format method (format())
+        - Format operator (%)
+    Formatting is used when u want to show that the string need to get another variable
+    
+    If we format different variables, they can be of different types
+    
+    You need to add slash if you want to add quotation, if u need double quotation u can define the string with single 
+    and the other way goes the same.
+'''
+
+#ex - F-strings
+f_string: str = f'The magic number is {42}'
+print(f_string)
+
+#ex - Format method
+format_method: str = 'The magic number is {}'.format(42)
+print(format_method)
+
+#ex - Format operator
+format_operator: str = 'The magic number is %d' % 42
+print(format_operator)
+
+
+
