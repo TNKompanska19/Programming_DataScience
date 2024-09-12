@@ -1,4 +1,4 @@
-
+from typing import List
 """
 While Statement
 
@@ -42,5 +42,40 @@ print(nr_of_boxes)
 Loop Termination and Initialization
 '''
 
+'''
 
+Break statement- the break statement stops the execution of the loop, it is a wsy to force the terminating an iteration
+
+'''
+
+#Example
+
+values: List[int] = [12, 4, 36, 7, 25, 13, 17, 90]
+n: int = 0
+
+while n < len(values):
+    if(values[n] % 5 == 0):
+        print("Finished:" + str(values[n]))
+        break
+    n+=1
+
+'''
+Continue statement - the continue statement in a loop body stops the execution of specific iterations.
+It stops the execution of a specific iteration of the loop, but continues with the next iteration.
+'''
+
+#Example
+
+vowels: str = 'aeiou'
+count: int = 0
+string: str = 'Hello'
+
+while count < len(string):
+    letter: str = string[count]
+    count+=1
+
+    if letter not in vowels:
+        continue
+
+    print(letter)
 
